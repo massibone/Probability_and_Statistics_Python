@@ -37,4 +37,5 @@ plt.show()
 
 # Stampa della varianza campionaria
 print("Varianza campionaria:", variance)
-#la varianza campionaria viene calcolata utilizzando la funzione np.var() con il parametro ddof impostato su 1 per indicare che si tratta di una varianza campionaria anziché di una varianza popolazione.
+#la varianza campionaria viene calcolata utilizzando la funzione np.var() 
+con il parametro ddof impostato su 1 per indicare che si tratta di una varianza campionaria anziché di una varianza popolazione.
