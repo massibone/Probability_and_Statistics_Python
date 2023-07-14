@@ -1,0 +1,27 @@
+Models of random variables are mathematical representations or frameworks that describe the behavior and characteristics of random variables. They provide a way to understand and analyze the probabilistic properties of random phenomena.
+
+Let's consider an example to illustrate this concept. Suppose we have a random variable X that represents the outcome of rolling a fair six-sided die. The possible values of X are 1, 2, 3, 4, 5, and 6, each with a probability of 1/6.
+
+To create a model for this random variable, we can use a discrete probability distribution. In this case, the model would be a uniform distribution, where each outcome has an equal probability.
+The model can be represented mathematically as:
+
+P(X = 1) = 1/6
+P(X = 2) = 1/6
+P(X = 3) = 1/6
+P(X = 4) = 1/6
+P(X = 5) = 1/6
+P(X = 6) = 1/6
+
+This model accurately describes the behavior of the random variable X, as it assigns the appropriate probabilities to each possible outcome.
+
+Models of random variables can also be more complex, such as continuous random variables. For instance, if we have a continuous random variable Y representing the heights of individuals in a population, we can use a probability density function (PDF) to model it. A common choice for modeling height data is the normal distribution.
+
+The model for Y could be represented by the following PDF:
+
+f(Y) = (1 / (√(2π)σ)) * e^(-(Y-μ)^2 / (2σ^2))
+
+In this equation, μ represents the mean of the height distribution, σ represents the standard deviation, and e is the base of the natural logarithm.
+
+This normal distribution model captures the typical bell-shaped curve observed in many real-world height distributions.
+
+In summary, models of random variables provide a mathematical framework to describe and analyze the behavior of random phenomena. They help us understand the probabilities associated with different outcomes and allow us to make predictions and draw inferences about the random variables in question.
