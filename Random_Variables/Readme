@@ -1,0 +1,10 @@
+In probability theory, a random variable is a variable that represents the outcomes of a random event or experiment. It associates a numerical value with each possible outcome of the event.
+Formally, a random variable is defined as a function that maps the outcomes of a random experiment to real numbers. It assigns a value to each outcome, allowing us to quantify and analyze the uncertainty associated with the event.
+
+Random variables can be classified into two types: discrete random variables and continuous random variables.
+
+1. Discrete Random Variables: A discrete random variable takes on a countable number of distinct values. The values can be finite or infinite but countable. For example, the number of heads obtained when flipping a coin multiple times is a discrete random variable. The possible values are 0, 1, 2, and so on.
+2. Continuous Random Variables: A continuous random variable takes on an uncountable number of possible values within a specified range. These values are typically associated with measurements and can take on any value within a continuous interval. For example, the height of a person or the time it takes to complete a task are continuous random variables.
+
+Random variables are characterized by their probability distribution, which describes the likelihood of each possible value occurring. The distribution can be represented by a probability mass function (PMF) for discrete random variables or a probability density function (PDF) for continuous random variables. The PMF or PDF provides the basis for calculating probabilities and performing statistical analyses on the random variable.
+  By studying random variables and their distributions, we can analyze and make predictions about the behavior of uncertain events and quantify the likelihood of different outcomes. Random variables are fundamental to the field of probability and play a crucial role in various areas such as statistics, decision theory, and stochastic processes.
