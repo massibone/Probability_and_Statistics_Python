@@ -25,3 +25,5 @@ plt.title('Funzione di Massa di Probabilità per Variabili Aleatorie Binomiali')
 plt.legend()
 plt.grid(True)
 
+# Visualizzazione del grafico
+plt.show()
