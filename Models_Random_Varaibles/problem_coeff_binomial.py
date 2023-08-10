@@ -9,5 +9,15 @@ C(4, 2) = 4! / (2! * (4 - 2)!) = 6
 Quindi ci sono 6 modi diversi in cui possono essere chiamati esattamente 2 tecnici.
 
 Poiché ci sono 4 tecnici in totale, la probabilità che vengano chiamati esattamente 2 tecnici è data dal rapporto tra il numero di modi in cui possono essere chiamati 2 tecnici (6) e il numero totale di possibili combinazioni di chiamate (che è anche 6 nel nostro caso, poiché ci sono 6 modi in cui possono essere chiamati 4 tecnici):
+Probabilità = 6 / 6 = 1
 
-.'''
+Quindi la probabilità che vengano chiamati esattamente 2 tecnici è 1, che corrisponde al 100%.
+'''
+import math
+
+def calcola_probabilita(num_tecnici, num_chiamati, num_selezionati):
+    coefficiente_binomiale = math.comb(num_chiamati, num_selezionati)
+    totale_combinazioni = math.comb(num_tecnici, num_chiamati)
+    probabilita = coefficiente_binomiale / totale_combinazioni
+    return probabilita
+  
