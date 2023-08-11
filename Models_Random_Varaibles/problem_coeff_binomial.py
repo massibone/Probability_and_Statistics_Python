@@ -21,3 +21,9 @@ def calcola_probabilita(num_tecnici, num_chiamati, num_selezionati):
     probabilita = coefficiente_binomiale / totale_combinazioni
     return probabilita
   
+num_tecnici = 4
+num_chiamati = 2
+num_selezionati = 2
+
+probabilita = calcola_probabilita(num_tecnici, num_chiamati, num_selezionati)
+print(f"La probabilità di chiamare esattamente 2 tecnici su un totale di 4 è: {probabilita}")
