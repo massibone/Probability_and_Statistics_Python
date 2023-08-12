@@ -21,3 +21,5 @@ while True:
     probabilita = calcola_probabilita(num_persone)
     if probabilita >= probabilita_obiettivo:
         break
+print(f"Numero minimo di persone necessarie: {num_persone}")
+(Numero minimo di persone necessarie: 23)
