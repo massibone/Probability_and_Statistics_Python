@@ -7,3 +7,17 @@ def calcola_probabilita(n):
     probabilita = 1.0
     giorni_natali = 365
   
+   for i in range(n):
+        probabilita *= (giorni_natali - i) / giorni_natali
+
+    probabilita_complemento = 1 - probabilita
+    return probabilita_complemento
+
+probabilita_obiettivo = 0.5
+num_persone = 0
+
+while True:
+    num_persone += 1
+    probabilita = calcola_probabilita(num_persone)
+    if probabilita >= probabilita_obiettivo:
+        break
