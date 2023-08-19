@@ -12,3 +12,12 @@ Il valore atteso del ricavo può essere calcolato come:
 Valore atteso del ricavo = C * P
 
 Dato che vogliamo che il valore atteso del ricavo sia il 10% di A, possiamo impostare l'equazione:
+C * P = 0.1 * A
+
+Quindi la cifra C che la compagnia dovrebbe far pagare alla polizza al cliente è:
+
+C = (0.1 * A) / P
+'''
+def calcola_cifra_polizza(cifra_garantita, probabilita):
+    cifra_polizza = (0.1 * cifra_garantita) / probabilita
+    return cifra_polizza
