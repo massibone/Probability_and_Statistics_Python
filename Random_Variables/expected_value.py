@@ -7,3 +7,8 @@ Il valore atteso (expected value) di una variabile casuale rappresenta la somma 
 
 In questo caso, il ricavo della compagnia di assicurazione è rappresentato dalla cifra che la compagnia incassa dalla polizza, che chiameremo C. Quindi dobbiamo trovare la cifra C tale che il valore atteso del ricavo sia il 10% di A.
 
+Il valore atteso del ricavo può essere calcolato come:
+
+Valore atteso del ricavo = C * P
+
+Dato che vogliamo che il valore atteso del ricavo sia il 10% di A, possiamo impostare l'equazione:
