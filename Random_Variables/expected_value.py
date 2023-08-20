@@ -21,3 +21,11 @@ C = (0.1 * A) / P
 def calcola_cifra_polizza(cifra_garantita, probabilita):
     cifra_polizza = (0.1 * cifra_garantita) / probabilita
     return cifra_polizza
+cifra_garantita = 1000  # Cifra garantita A
+probabilita = 0.2  # Probabilità P
+
+cifra_polizza = calcola_cifra_polizza(cifra_garantita, probabilita)
+print(f"La compagnia dovrebbe far pagare alla polizza al cliente la cifra di: {cifra_polizza}")
+
+#La compagnia dovrebbe far pagare alla polizza al cliente la cifra di: 500.0
+
