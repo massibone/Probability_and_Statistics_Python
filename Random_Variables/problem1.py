@@ -10,3 +10,14 @@ Per trovare il numero medio di partite disputate, possiamo considerare una seque
 La probabilità che la prima partita venga vinta dal primo giocatore è P. In questo caso, il numero medio di partite disputate sarebbe 1, poiché la partita terminerebbe dopo un solo turno.
 
 La probabilità che la prima partita venga vinta dal secondo giocatore è 1 - P. In questo caso, il numero medio di partite disputate sarebbe 1 (la prima partita) più il numero medio di partite rimanenti, che è essenzialmente X, poiché stiamo tornando alla situazione iniziale.
+Quindi, possiamo scrivere un'equazione ricorsiva per il numero medio di partite disputate (E(X)):
+
+E(X) = P * 1 + (1 - P) * (1 + E(X))
+
+Espandendo l'equazione:
+
+E(X) = P + 1 - P + (1 - P) * E(X)
+
+Raggruppando i termini:
+
+E(X) = 1 + (1 - P) * E(X)
