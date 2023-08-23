@@ -21,3 +21,11 @@ E(X) = P + 1 - P + (1 - P) * E(X)
 Raggruppando i termini:
 
 E(X) = 1 + (1 - P) * E(X)
+Spostando E(X) a sinistra e (1 - P) * E(X) a destra:
+
+E(X) - (1 - P) * E(X) = 1
+
+Semplificando:
+
+E(X) * P = 1
+
