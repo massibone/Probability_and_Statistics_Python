@@ -28,4 +28,14 @@ E(X) - (1 - P) * E(X) = 1
 Semplificando:
 
 E(X) * P = 1
+Quindi, il numero medio di partite disputate, se i = 2, è dato da:
 
+E(X) = 1/P
+
+Per dimostrare che il valore è massimo quando P = 1/2, possiamo derivare E(X) rispetto a P e trovare il valore di P che massimizza la funzione.
+
+d(E(X))/dP = -1/P^2
+
+Dato che P è una probabilità, 0 < P < 1, e poiché la derivata è negativa, il valore di E(X) diminuisce all'aumentare di P.
+
+Quindi, il valore di E(X) è massimo quando P = 1/2.
