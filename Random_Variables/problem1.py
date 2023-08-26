@@ -17,3 +17,6 @@ plt.ylabel('Numero medio di partite disputate')
 plt.title('Numero medio di partite disputate in funzione di P')
 plt.grid(True)
 plt.show()
+
+# Il numero medio di partite disputate varia al variare di P. 
+# Il valore è massimo quando P è pari a 0.5.
