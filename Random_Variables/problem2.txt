@@ -1,0 +1,2 @@
+il tempo di vita di un fusibile è una variabile aleatoria X con dunzione di densità
+f(x) = a**2xe**(-ax) con x>=0. come si calcola il tempo di vita medio
