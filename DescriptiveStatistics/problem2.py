@@ -1,3 +1,15 @@
+'''
+questi dati che rappresentano i tempi di vita (ore) di un campione di 40 transistor:
+112 121 126 108 141 104 136 134 121 111
+143 116 108 122 127 125 165 145 187 140
+134 120 131 112 111 110 154 150 147 132 131 
+132 119 110 124 121 153 154 184 130 136 154
+a) determina media mediana e moda campionaria
+b)traccia un grafico delle frequenze cumulative relative per questi dati
+'''
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 
