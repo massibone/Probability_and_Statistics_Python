@@ -16,3 +16,29 @@ Se il p-value è maggiore del livello di significatività (in questo caso, 0.05)
 non avremo sufficienti evidenze per rifiutare l'ipotesi che λ1 = λ2. Al contrario, 
 se il p-value è inferiore al livello di significatività, 
 possiamo rifiutare l'ipotesi e concludere che i due campioni provengono da popolazioni con parametri λ diversi.
+
+
+
+
+
+import numpy as np
+from scipy.stats import ks_2samp
+
+# Dati dei campioni
+campione1 = np.array([24, 32, 29, 33, 40, 28, 34, 36])
+campione2 = np.array([42, 36, 41])
+
+# Calcolo delle medie dei campioni
+media_campione1 = np.mean(campione1)
+media_campione2 = np.mean(campione2)
+
+# Test di Kolmogorov-Smirnov
+statistiche, p_value = ks_2samp(campione1, campione2)
+
+# Livello di significatività
+livello_significatività = 0.05
+
+# Stampa dei risultati
+print(f"Media campione 1: {media_campione1}")
+print(f"Media campione 2: {media_campione2}")
+print(f"Test di Kolmogorov-Smirnov: statistiche = {statistiche}, p-value = {p_value}")
