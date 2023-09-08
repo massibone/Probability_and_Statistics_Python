@@ -42,3 +42,15 @@ livello_significatività = 0.05
 print(f"Media campione 1: {media_campione1}")
 print(f"Media campione 2: {media_campione2}")
 print(f"Test di Kolmogorov-Smirnov: statistiche = {statistiche}, p-value = {p_value}")
+
+if p_value > livello_significatività:
+    print("Non ci sono evidenze sufficienti per rifiutare l'ipotesi che λ1 = λ2.")
+else:
+    print("Possiamo rifiutare l'ipotesi che λ1 = λ2; i due campioni provengono da popolazioni con parametri λ diversi.")
+
+'''
+Media campione 1: 32.0
+Media campione 2: 39.666666666666664
+Test di Kolmogorov-Smirnov: statistiche = 0.75, p-value = 0.1212121212121212     
+Non ci sono evidenze sufficienti per rifiutare l'ipotesi che λ1 = λ2.
+'''
