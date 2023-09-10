@@ -5,3 +5,5 @@ Y 7.4 9.3 10.6 15.4 18.1 22.2 24.1 24.8
 a) traccia il diagramma di dispersione
 b) trova la retta di regressione che interpola questi dati
 '''
+import numpy as np
+import matplotlib.pyplot as plt
