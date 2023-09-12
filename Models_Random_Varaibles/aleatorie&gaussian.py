@@ -28,3 +28,8 @@ La media delle precipitazioni per due anni è 300 + 300 = 600 mm e la deviazione
 Possiamo utilizzare la distribuzione normale per calcolare la probabilità che la somma delle precipitazioni superi i 600 mm
 b) Per calcolare la probabilità che le precipitazioni del prossimo anno superino quelle dell'anno successivo per più di 70 mm, dobbiamo calcolare la probabilità che la differenza tra le due variabili casuali normali sia maggiore di 70 mm.
 
+Poiché le due variabili casuali normali sono indipendenti, la differenza segue una distribuzione normale con media pari alla differenza delle medie e varianza pari alla somma delle varianze.
+
+La media delle precipitazioni per un anno è 300 mm e la deviazione standard è 70 mm. Pertanto, la media della differenza è 0 mm e la deviazione standard è sqrt(70^2 + 70^2) ≈ 98.99 mm.
+
+Possiamo utilizzare la distribuzione normale per calcolare la probabilità che la differenza sia maggiore di 70 mm
