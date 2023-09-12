@@ -21,3 +21,10 @@ i dati a disposizione di metereologi indicano che le precipitazioni a Firenze ha
 Per risolvere questo problema, possiamo utilizzare le proprietà della distribuzione normale.
 
 a) Per calcolare la probabilità che le precipitazioni dei prossimi due anni superino complessivamente i 600 mm, dobbiamo calcolare la probabilità che la somma delle precipitazioni di due anni sia maggiore di 600 mm.
+Poiché le precipitazioni di anni successivi sono indipendenti, la somma delle variabili casuali normali indipendenti segue una distribuzione normale con media pari alla somma delle medie e varianza pari alla somma delle varianze.
+
+La media delle precipitazioni per due anni è 300 + 300 = 600 mm e la deviazione standard è sqrt(70^2 + 70^2) ≈ 98.99 mm.
+
+Possiamo utilizzare la distribuzione normale per calcolare la probabilità che la somma delle precipitazioni superi i 600 mm
+b) Per calcolare la probabilità che le precipitazioni del prossimo anno superino quelle dell'anno successivo per più di 70 mm, dobbiamo calcolare la probabilità che la differenza tra le due variabili casuali normali sia maggiore di 70 mm.
+
