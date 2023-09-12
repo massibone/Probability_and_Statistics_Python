@@ -10,3 +10,8 @@ print("La probabilità che le precipitazioni dei prossimi due anni superino comp
 
 mean_diff = 0
 std_dev_diff = 98.99
+
+# Calcolo della probabilità utilizzando la distribuzione normale
+probability_diff = 1 - stats.norm.cdf(70, mean_diff, std_dev_diff)
+
+print("La probabilità che le precipitazioni del prossimo anno superino quelle dell'anno successivo per più di 70 mm è:", probability_diff)
