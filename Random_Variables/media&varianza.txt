@@ -1,0 +1,36 @@
+PROBLEMA:
+Supponi che X possa assumere i valori 1,2,3,4 con pari probabilità.
+Rrova media e varianza di X
+
+Calcolo della media:
+La media di una variabile casuale discreta si ottiene sommando i valori moltiplicati per le rispettive probabilità e quindi dividendo per il numero totale di valori possibili.
+
+Media di X = (1 * P(1)) + (2 * P(2)) + (3 * P(3)) + (4 * P(4))
+
+Poiché tutti i valori hanno probabilità pari, abbiamo:
+
+Media di X = (1 * 1/4) + (2 * 1/4) + (3 * 1/4) + (4 * 1/4)
+= 1/4 + 1/2 + 3/4 + 1
+= 3/4 + 1 + 1
+= 5/4 + 1
+= 9/4
+= 2.25
+
+Quindi, la media di X è 2.25.
+
+Calcolo della varianza:
+La varianza di una variabile casuale discreta si ottiene sottraendo la media al quadrato da ciascun valore, moltiplicando il risultato per la rispettiva probabilità, quindi sommando tutti i valori ottenuti.
+
+Varianza di X = [(1 - Media di X)^2 * P(1)] + [(2 - Media di X)^2 * P(2)] + [(3 - Media di X)^2 * P(3)] + [(4 - Media di X)^2 * P(4)]
+
+Sostituendo i valori:
+
+Varianza di X = [(1 - 2.25)^2 * 1/4] + [(2 - 2.25)^2 * 1/4] + [(3 - 2.25)^2 * 1/4] + [(4 - 2.25)^2 * 1/4]
+= [(-1.25)^2 * 1/4] + [(-0.25)^2 * 1/4] + [(0.75)^2 * 1/4] + [(1.75)^2 * 1/4]
+= [1.5625 * 1/4] + [0.0625 * 1/4] + [0.5625 * 1/4] + [3.0625 * 1/4]
+= 0.390625 + 0.015625 + 0.140625 + 0.765625
+= 1.3125
+
+Quindi, la varianza di X è 1.3125.
+
+In conclusione, la media di X è 2.25 e la varianza è 1.3125.
