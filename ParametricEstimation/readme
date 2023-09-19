@@ -1,0 +1,15 @@
+Parametric estimation is a statistical method used to estimate unknown parameters (such as mean, variance, proportions, etc.) of a population based on a specific assumed probability distribution or model. In this approach, it is assumed that the data follows a certain known distribution, and the goal is to estimate the parameters that define that distribution.
+
+Here's a step-by-step process for parametric estimation:
+
+1. **Select a Probability Distribution**: Choose a probability distribution that is believed to describe the data well. Common choices include normal, binomial, Poisson, etc.
+
+2. **Specify the Model Parameters**: Each probability distribution has parameters that need to be estimated, such as mean and variance for a normal distribution. Define these parameters within the chosen distribution.
+
+3. **Collect Data**: Obtain a sample of data from the population of interest.
+
+4. **Estimate Parameters**: Use the collected data to estimate the parameters of the selected distribution. Common estimation methods include maximum likelihood estimation (MLE) and method of moments.
+
+5. **Validate the Model**: Assess the goodness of fit of the chosen distribution to the data using various statistical tests or visualizations.
+
+Parametric estimation is efficient and powerful when the assumed distribution closely matches the true underlying distribution of the data. However, it can lead to biased estimates if the assumed distribution is inappropriate for the data, highlighting the importance of choosing the right distribution based on prior knowledge or analysis.
