@@ -7,3 +7,14 @@ La formula della PMF della distribuzione binomiale è:
 
 P(X = k) = C(n, k) * p^k * (1-p)^(n-k)
 '''
+from scipy.stats import binom
+
+p = 0.7  # Probabilità di successo
+n = 10   # Numero totale di votanti
+k = 7    # Numero di votanti favorevoli desiderato
+
+# Calcolo della probabilità utilizzando la distribuzione binomiale
+probability = binom.pmf(k, n, p)
+
+print("La probabilità che su 10 votanti esattamente 7 siano favorevoli è:", probability)
+#La probabilità che su 10 votanti esattamente 7 siano favorevoli è: 0.26682793200000005
