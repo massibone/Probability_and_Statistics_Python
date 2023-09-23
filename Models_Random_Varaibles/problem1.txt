@@ -1,0 +1,10 @@
+arrivo alla fermata dell'autobus alle 10 e sono certo che ne passerà uno in momento distribuito tra le 10 e le 10.30.a)qual è la probabilità che debba aspettare più di 10 minuti?b) se alle 10.15 l'autobus non è arrivato, qual è la probabilità di apettare almeno 10 minuti?
+
+a) Per calcolare la probabilità di dover aspettare più di 10 minuti, dobbiamo calcolare l'area della distribuzione uniforme che si trova oltre i 10 minuti.
+
+Poiché la distribuzione uniforme ha un'area totale di 30 minuti (intervallo tra 10:00 e 10:30), l'area che rappresenta il tempo di attesa
+superiore a 10 minuti è di 20 minuti.
+b) Per calcolare la probabilità di dover aspettare almeno 10 minuti, dato che l'autobus non è arrivato alle 10:15, dobbiamo calcolare l'area della distribuzione uniforme rimanente tra 10:15 e 10:30.
+
+L'intervallo tra 10:15 e 10:30 ha una durata di 15 minuti, quindi la probabilità di dover aspettare almeno 10 minuti è:
+
