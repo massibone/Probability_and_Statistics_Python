@@ -7,4 +7,5 @@ superiore a 10 minuti è di 20 minuti.
 b) Per calcolare la probabilità di dover aspettare almeno 10 minuti, dato che l'autobus non è arrivato alle 10:15, dobbiamo calcolare l'area della distribuzione uniforme rimanente tra 10:15 e 10:30.
 
 L'intervallo tra 10:15 e 10:30 ha una durata di 15 minuti, quindi la probabilità di dover aspettare almeno 10 minuti è:
-
+La probabilità di dover aspettare più di 10 minuti è: 0.6666666666666666
+La probabilità di dover aspettare almeno 10 minuti dato che l'autobus non è arrivato alle 10:15 è: 0.5
