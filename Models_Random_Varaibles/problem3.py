@@ -20,3 +20,7 @@ def calculate_probability(num_simulations):
     probability = count_successful / num_simulations
     return probability
     
+num_simulations = 100000  # Numero di simulazioni da eseguire
+
+probability = calculate_probability(num_simulations)
+print(f"Probabilità approssimata: {probability}")
