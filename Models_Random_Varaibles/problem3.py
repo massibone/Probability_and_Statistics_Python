@@ -11,3 +11,12 @@ def simulate_dice_rolls(num_rolls):
     for _ in range(num_rolls):
         sum_of_scores += roll_dice()
     return sum_of_scores
+def calculate_probability(num_simulations):
+    count_successful = 0
+    for _ in range(num_simulations):
+        sum_of_scores = simulate_dice_rolls(10)
+        if 30 <= sum_of_scores <= 40:
+            count_successful += 1
+    probability = count_successful / num_simulations
+    return probability
+    
