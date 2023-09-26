@@ -29,4 +29,3 @@ b = coefficients[1]  # Coefficiente di intercetta
 print(f"Equazione della retta di regressione: Y = {m:.4f}x + {b:.4f}")
 
 #Equazione della retta di regressione: Y = 0.7722x + 6.6418
-in windows diagramma_dispersione.png
