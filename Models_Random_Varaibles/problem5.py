@@ -22,3 +22,4 @@ probability = calculate_probability(sample_size, p, lower_bound, upper_bound)
 print(f"Probabilità: {probability}")
 
 # probabilità del 35%
+
