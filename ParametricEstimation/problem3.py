@@ -12,3 +12,10 @@ n = len(reddito_annuale)
 # Calcolo della media campionaria
 media_campionaria = np.mean(reddito_annuale)
 print("Media campionaria:", media_campionaria)
+# Calcolo della deviazione standard campionaria
+deviazione_standard_campionaria = np.std(reddito_annuale, ddof=1)
+print("Deviazione standard campionaria:", deviazione_standard_campionaria)
+
+# Calcolo dell'intervallo di confidenza al 95%
+intervallo_confidenza = stats.t.interval(0.95, df=n-1, loc=media_campionaria, scale=deviazione_standard_campionaria/np.sqrt(n))
+print("Intervallo di confidenza al 95%:", intervallo_confidenza)
