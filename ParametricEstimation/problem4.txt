@@ -8,3 +8,37 @@ Per calcolare l'intervallo di confidenza, utilizziamo la formula:
 Intervallo di confidenza = Frazione ± Z * sqrt((Frazione * (1 - Frazione)) / n)
 
 Dove:
+Frazione è la frazione di femmine nel campione (0.17)
+Z è il valore critico corrispondente al livello di confidenza del 90% (1.645 per un intervallo bilaterale)
+n è la dimensione del campione (1200)
+Sostituendo i valori nella formula:
+
+Intervallo di confidenza = 0.17 ± 1.645 * sqrt((0.17 * (1 - 0.17)) / 1200)
+
+Calcolando il risultato:
+
+Intervallo di confidenza = 0.17 ± 0.0204
+Intervallo di confidenza = (0.1496, 0.1904)
+
+Quindi, l'intervallo di confidenza al 90% per la frazione di ingegneri che sono femmine è (0.1496, 0.1904).
+
+b) Ispanoamericani:
+Il numero di ispanoamericani nel campione è di 48 su un totale di 1200 ingegneri. La frazione di ispanoamericani è quindi 48/1200 = 0.04.
+
+Utilizzando la stessa formula di sopra, con i valori appropriati sostituiti:
+
+Intervallo di confidenza = 0.04 ± 1.645 * sqrt((0.04 * (1 - 0.04)) / 1200)
+
+Calcolando il risultato:
+
+Intervallo di confidenza = 0.04 ± 0.009
+Intervallo di confidenza = (0.031, 0.049)
+Quindi, l'intervallo di confidenza al 90% per la frazione di ingegneri che sono ispanoamericani è (0.031, 0.049).
+c) Afroamericani:
+Il numero di afroamericani nel campione è di 60 su un totale di 1200 ingegneri. La frazione di afroamericani è quindi 60/1200 = 0.05.
+Utilizzando la stessa formula di sopra, con i valori appropriati sostituiti:
+Intervallo di confidenza = 0.05 ± 1.645 * sqrt((0.05 * (1 - 0.05)) / 1200)
+Calcolando il risultato:
+Intervallo di confidenza = 0.05 ± 0.009
+Intervallo di confidenza = (0.041, 0.059)
+Quindi, l'intervallo di confidenza al 90% per la frazione di ingegneri che sono afroamericani è (0.041, 0.05
