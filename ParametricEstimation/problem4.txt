@@ -1,1 +1,10 @@
+Utilizzere il metodo di approssimazione binomiale.
 
+a) Femmine:
+Il numero di femmine nel campione è di 204 su un totale di 1200 ingegneri. La frazione di femmine è quindi 204/1200 = 0.17.
+
+Per calcolare l'intervallo di confidenza, utilizziamo la formula:
+
+Intervallo di confidenza = Frazione ± Z * sqrt((Frazione * (1 - Frazione)) / n)
+
+Dove:
