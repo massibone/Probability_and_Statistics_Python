@@ -4,3 +4,6 @@ In simpler terms, ANOVA helps researchers or analysts answer questions like:
 Are there significant differences between the average scores of different groups?
 Do different treatments or conditions have a significant impact on the outcome variable?
 Are there any interactions between multiple independent variables?
+ANOVA works by comparing the variability within each group (due to random differences) with the variability between the groups (due to the effects of the independent variable). If the variability between groups is significantly larger than the variability within groups, it suggests that the independent variable has a significant effect on the dependent variable.
+
+There are different types of ANOVA, such as one-way ANOVA (comparing means of one factor), two-way ANOVA (comparing means of two factors), and so on. It is a widely used and essential tool in various fields of research, including social sciences, biology, economics, and many others.
