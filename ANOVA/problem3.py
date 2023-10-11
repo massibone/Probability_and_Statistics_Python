@@ -20,3 +20,14 @@ t_statistic, p_value = ttest_ind(sistemaA, sistemaB)
 # Stampa i risultati
 print("Valore della statistica t:", t_statistic)
 print("Valore di p:", p_value)
+# Verifica dell'ipotesi
+alpha = 0.05
+if p_value > alpha:
+    print("Non ci sono differenze significative tra i due produttori (ipotesi nulla accettata).")
+else:
+    print("Ci sono differenze significative tra i due produttori (ipotesi nulla rigettata).")
+'''
+Valore della statistica t: -0.019134469827029005
+Valore di p: 0.9850038630490738
+Non ci sono differenze significative tra i due produttori (ipotesi nulla accettata).
+'''
