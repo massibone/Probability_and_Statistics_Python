@@ -1,3 +1,10 @@
+'''
+I gradi di libertà di una variabile aleatoria o di una statistica in genere esprimono il numero minimo di dati sufficienti a valutare la quantità d'informazione contenuta nella statistica. Infatti, quando un dato non è indipendente, l'informazione che esso fornisce è già contenuta implicitamente negli altr
+
+
+'''
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import t
