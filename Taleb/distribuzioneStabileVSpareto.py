@@ -1,8 +1,4 @@
-
 '''
-
-
-
 In questo codice:
 Generiamo 100 dati da una distribuzione di Pareto e da una distribuzione stabile.
 Creiamo due grafici a istogramma per visualizzare le distribuzioni generate.
