@@ -1,1 +1,5 @@
-
+'''Nella prima, hai un periodo di calma chiamato "Pace" con una media positiva e una volatilità molto bassa, e un periodo di turbolenza chiamato "Guerra" con una media negativa e una volatilità estremamente alta.
+Nella seconda situazione, prendi un bond B che paga interessi r alla fine di un singolo periodo. Alla scadenza, c'è una grande probabilità di ottenere B(1 + r), e una piccola possibilità di default. È molto improbabile ottenere esattamente B.
+Immagina che non ci siano passaggi intermedi tra Guerra e Pace: sono stati distinti e stati discreti. I bond non vanno in default solo "un po'". Nota che la probabilità che il risultato sia vicino alla media è quasi nulla. Tipicamente, la probabilità dell'aspettativa (E(x)) è più piccola rispetto alle diverse medie dei regimi, quindi P(x = E(x)) < P (x = m1) e < P (x = m2), ma nel caso estremo (bond), P(x = E(x)) diventa sempre più piccola. L'evento raro è il risultato vicino alla media.
+Lo stesso concetto si applica alle valute fissate, poiché le svalutazioni non possono essere "lievi", con un tipo di volatilità tutto-o-niente e una bassa densità nella "valle" tra i due regimi distinti.
+'''
