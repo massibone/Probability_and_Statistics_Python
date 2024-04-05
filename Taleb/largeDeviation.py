@@ -15,3 +15,22 @@ def analyze_large_deviations(data, threshold_pct=0.04, window=30, pre_window=5, 
       pd.DataFrame: DataFrame containing information about large deviations.
   """
   
+ # Calculate daily absolute deviations
+  data['Average_Close'] = data['Close'].rolling(window=window).mean()
+  data['Abs_Deviation'] = abs(data['Close'] - data['Average_Close'])
+
+  # Identify large deviations
+  large_deviations = data[data['Abs_Deviation'] > data['Average_Close'] * threshold_pct]
+
+  # Analyze predecessors and successors
+  large_deviations['Precursors'] = large_deviations['Abs_Deviation'].shift(1).rolling(pre_window).sum() > data['Average_Close'] * threshold_pct * pre_window
+  large_deviations['Successors'] = large_deviations['Abs_Deviation'].shift(-1).rolling(post_window).sum() > data['Average_Close'] * threshold_pct * post_window
+
+  # Return results
+  return large_deviations
+
+# Assuming you have your daily price data in a pandas DataFrame named 'stock_data'
+large_deviations_df = analyze_large_deviations(stock_data)
+
+# Print information about large deviations
+print(large_deviations_df)
