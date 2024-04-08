@@ -12,3 +12,18 @@ n = 1000  # Numero di dati
 ricchezza = np.random.normal(50000, 10000, n)  # Genera dati casuali per la ricchezza
 guerre_pandemie = np.random.uniform(0, 1, n)  # Genera dati casuali per le guerre/pandemie
 dimensioni_aziende = np.random.randint(1, 1000, n)  # Genera dati casuali per le dimensioni delle aziende
+
+# Calcoliamo l'indicatore kappa per ciascuna categoria
+kappa_ricchezza = np.mean(ricchezza) / np.max(ricchezza)
+kappa_guerre_pandemie = np.mean(guerre_pandemie) / np.max(guerre_pandemie)
+kappa_dimensioni_aziende = np.mean(dimensioni_aziende) / np.max(dimensioni_aziende)
+
+# Visualizziamo i risultati
+categories = ['Ricchezza', 'Guerre/Pandemie', 'Dimensioni Aziende']
+kappas = [kappa_ricchezza, kappa_guerre_pandemie, kappa_dimensioni_aziende]
+
+plt.bar(categories, kappas, color=['blue', 'red', 'green'])
+plt.title('Effetto dell\'aumento su kappa')
+plt.xlabel('Categoria')
+plt.ylabel('Kappa')
+plt.show()
