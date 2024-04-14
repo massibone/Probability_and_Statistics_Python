@@ -28,3 +28,10 @@ ax2.set_xlabel("X")
 ax2.set_ylabel("Y")
 ax2.set_xlim(2, 4)  # Imposta i limiti dell'asse x per il zoom
 ax2.set_ylim(2, 4)  # Imposta i limiti dell'asse y per il zoom
+# Aggiungi testo per evidenziare il concetto di "concentrazione"
+ax1.text(5, 9, "Concentrazione\nvista da lontano", fontsize=12, ha='center')
+ax2.text(3, 3.5, "Concentrazione\nvista da vicino", fontsize=12, ha='center')
+
+# Mostra il grafico
+plt.tight_layout()
+plt.show()
