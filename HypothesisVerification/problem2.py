@@ -18,7 +18,7 @@ se il p-value è inferiore al livello di significatività,
 possiamo rifiutare l'ipotesi e concludere che i due campioni provengono da popolazioni con parametri λ diversi.
 
 
-
+'''
 
 
 import numpy as np
