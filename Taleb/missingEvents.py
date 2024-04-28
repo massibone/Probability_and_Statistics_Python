@@ -7,3 +7,7 @@ import random
 # Dati di esempio: numero totale di eventi e proporzione da rimuovere
 total_events = 1000
 proportion_to_remove = 0.3  # Rimuovi il 30% degli eventi
+# Funzione per simulare l'effetto di rimuovere una proporzione di eventi
+def simulate_missing_events(total_events, proportion_to_remove, num_simulations):
+    results = []
+    
