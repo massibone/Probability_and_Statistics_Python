@@ -18,3 +18,11 @@ def simulate_missing_events(total_events, proportion_to_remove, num_simulations)
         # Determina quanti eventi rimuovere
         num_to_remove = int(total_events * proportion_to_remove)
        
+  # Rimuove in modo casuale una proporzione di eventi
+        removed_events = random.sample(all_events, num_to_remove)
+        
+        # Calcola quanti eventi rimangono
+        remaining_events = [event for event in all_events if event not in removed_events]
+        
+        # Calcola la proporzione di eventi rimossi
+        proportion_removed = num_to_remove / total_events
