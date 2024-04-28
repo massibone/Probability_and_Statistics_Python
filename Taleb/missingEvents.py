@@ -11,3 +11,10 @@ proportion_to_remove = 0.3  # Rimuovi il 30% degli eventi
 def simulate_missing_events(total_events, proportion_to_remove, num_simulations):
     results = []
     
+   for _ in range(num_simulations):
+        # Genera un campione di eventi
+        all_events = list(range(1, total_events + 1))
+        
+        # Determina quanti eventi rimuovere
+        num_to_remove = int(total_events * proportion_to_remove)
+       
