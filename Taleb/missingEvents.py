@@ -26,3 +26,19 @@ def simulate_missing_events(total_events, proportion_to_remove, num_simulations)
         
         # Calcola la proporzione di eventi rimossi
         proportion_removed = num_to_remove / total_events
+ # Memorizza i risultati della simulazione
+        results.append((num_to_remove, len(remaining_events), proportion_removed))
+    
+    return results
+
+# Numero di simulazioni da eseguire
+num_simulations = 10
+
+# Esegui la simulazione di rimozione casuale di eventi
+simulation_results = simulate_missing_events(total_events, proportion_to_remove, num_simulations)
+
+# Stampare i risultati delle simulazioni
+print("Simulazioni di rimozione casuale di eventi:")
+for i, result in enumerate(simulation_results):
+    num_removed, num_remaining, proportion_removed = result
+    print(f"Simulazione {i+1}: Eventi rimossi = {num_removed}, Eventi rimanenti = {num_remaining}, Proporzione rimossa = {proportion_removed:.2f}")
