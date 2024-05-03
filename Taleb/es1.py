@@ -8,3 +8,18 @@ Quindi, quello che stiamo facendo è aggiungere sempre più livelli di incertezz
 Questo modo di aggiungere incertezza può aiutarci a capire meglio come certe cose si comportano quando diventano più complesse, senza dover usare solo i numeri. È come una sorta di gioco di costruzione concettuale, dove possiamo esplorare idee strane e complesse.
 '''
 
+import numpy as np
+
+def add_uncertainty(x, levels):
+    """
+    Aggiunge livelli di incertezza in modo ricorsivo a un valore x.
+    
+    Parameters:
+        x (float): Valore iniziale su cui aggiungere incertezza.
+        levels (int): Numero di livelli di incertezza da aggiungere.
+    
+    Returns:
+        float: Valore di x con incertezza aggiunta.
+    """
+    if levels <= 0:
+        return x
