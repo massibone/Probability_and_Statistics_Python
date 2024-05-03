@@ -23,3 +23,18 @@ def add_uncertainty(x, levels):
     """
     if levels <= 0:
         return x
+
+    # Genera un nuovo valore casuale intorno a x
+    uncertainty = np.random.normal(loc=0, scale=1)  # incertezza casuale con distribuzione normale
+    x_with_uncertainty = x + uncertainty
+    
+    # Chiamata ricorsiva per aggiungere ulteriori livelli di incertezza
+    return add_uncertainty(x_with_uncertainty, levels - 1)
+
+# Esempio di utilizzo
+initial_value = 10.0
+num_levels = 3
+
+final_value = add_uncertainty(initial_value, num_levels)
+print(f"Valore iniziale: {initial_value}")
+print(f"Valore finale con incertezza: {final_value}")
