@@ -16,3 +16,17 @@ def calcola_caramelle_rosse():
     # Approssimazione del numero di caramelle rosse con incertezza
     caramelle_rosse_approssimate = numero_totale_caramelle * percentuale_caramelle_rosse
     
+  
+    
+
+    # Applicazione dell'incertezza sulla percentuale di caramelle rosse
+    caramelle_rosse_con_incertezza = random.uniform(1 - incertezza_percentuale, 1 + incertezza_percentuale) * caramelle_rosse_approssimate
+    
+    # Arrotondiamo il risultato
+    caramelle_rosse_con_incertezza = round(caramelle_rosse_con_incertezza)
+    
+    return caramelle_rosse_con_incertezza
+
+# Esempio di utilizzo della funzione
+caramelle_rosse = calcola_caramelle_rosse()
+print(f"Numero approssimato di caramelle rosse nel vaso: {caramelle_rosse}")
