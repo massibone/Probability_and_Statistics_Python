@@ -13,3 +13,6 @@ def calcola_caramelle_rosse():
     percentuale_caramelle_rosse = random.uniform(0.4, 0.6)
   # Percentuale di incertezza nella percentuale di caramelle rosse (tra 5% e 10%)
     incertezza_percentuale = random.uniform(0.05, 0.1)
+    # Approssimazione del numero di caramelle rosse con incertezza
+    caramelle_rosse_approssimate = numero_totale_caramelle * percentuale_caramelle_rosse
+    
