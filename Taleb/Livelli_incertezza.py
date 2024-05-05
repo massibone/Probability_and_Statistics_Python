@@ -9,3 +9,5 @@ def calcola_caramelle_rosse():
     # Numero totale di caramelle nel vaso
     numero_totale_caramelle = 100
     
+   # Percentuale approssimativa di caramelle rosse (tra 40% e 60%)
+    percentuale_caramelle_rosse = random.uniform(0.4, 0.6)
