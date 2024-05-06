@@ -48,3 +48,5 @@ Immagina che
 Il valore di 0.6582575697231753
 E(X)=0.6582575697231753 rappresenta una stima approssimativa della taglia media di un giocattolo nel mucchio. Quindi, se prendessimo un giocattolo a caso da questo mucchio, ci aspetteremmo che sia di dimensioni intorno a questo numero.
 
+'''
+
