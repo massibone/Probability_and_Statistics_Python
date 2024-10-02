@@ -3,7 +3,8 @@ Ci sono due varianti del test di permutazione oltre al test di permutazione casu
 
 Test di permutazione esaustivo: consiste nel calcolare tutte le possibili divisioni dei dati, pratico solo per piccoli campioni.
 Test di permutazione bootstrap: i campionamenti vengono effettuati con reinserimento, modellando la variabilità sia nell'assegnazione del trattamento che nella selezione dei soggetti.
-I test di permutazione sono utili per esplorare il ruolo della variazione casuale, sono facili da codificare, interpretare e spiegare, e non richiedono le stesse ipotesi sui dati normalmente distribuiti come i metodi basati su formule.
+I test di permutazione sono utili per esplorare il ruolo della variazione casuale, sono facili da codificare, interpretare e spiegare,
+e non richiedono le stesse ipotesi sui dati normalmente distribuiti come i metodi basati su formule.
 '''
 
 import numpy as np
