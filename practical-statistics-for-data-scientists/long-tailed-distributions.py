@@ -13,3 +13,12 @@ import pandas as pd
 # Dati simulati: i ritorni giornalieri di Netflix (NFLX)
 # Supponiamo di avere una serie temporale di prezzi di chiusura
 # In un caso reale, caricheresti questi dati da un file o un database
+
+# Simuliamo dei prezzi di chiusura per esempio
+np.random.seed(0)
+price = np.exp(np.cumsum(np.random.normal(0, 1, 500)))  # Simulazione di prezzi
+sp500_px = pd.DataFrame({'NFLX': price})
+
+# Calcolo dei ritorni giornalieri logaritmici
+nflx = sp500_px['NFLX']
+nflx_returns = np.diff(np.log(nflx[nflx > 0]))
