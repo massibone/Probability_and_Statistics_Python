@@ -22,3 +22,10 @@ sp500_px = pd.DataFrame({'NFLX': price})
 # Calcolo dei ritorni giornalieri logaritmici
 nflx = sp500_px['NFLX']
 nflx_returns = np.diff(np.log(nflx[nflx > 0]))
+
+# Creazione del QQ-Plot
+fig, ax = plt.subplots(figsize=(6, 6))
+stats.probplot(nflx_returns, dist="norm", plot=ax)
+ax.get_lines()[1].set_color('grey')  # Cambia il colore della linea di riferimento
+plt.title("QQ-Plot dei ritorni di Netflix (NFLX)")
+plt.show()
