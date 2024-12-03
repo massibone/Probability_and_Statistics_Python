@@ -1,5 +1,15 @@
 '''
-Immagina di lanciare una moneta 10 volte e contare quante volte esce testa. Ogni volta che esce testa, diciamo che è un successo. La distribuzione binomiale ci aiuta a capire quante volte ci aspettiamo che esca testa in questi 10 lanci. È come fare una previsione basata su quanti lanci ci aspettiamo di vincere a un gioco.
+Immagina di lanciare una moneta 
+10 volte e contare quante volte 
+esce testa. Ogni volta che esce testa, 
+diciamo che è un successo. 
+La distribuzione binomiale 
+ci aiuta a capire quante volte 
+ci aspettiamo che esca testa 
+in questi 10 lanci. 
+È come fare una previsione basata 
+su quanti lanci ci aspettiamo 
+di vincere a un gioco.
 '''
 import scipy.stats as stats
 
