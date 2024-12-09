@@ -10,6 +10,7 @@ La caratteristica vita (η) rappresenta il tempo caratteristico al posto del tas
 La distribuzione di Weibull è quindi utile per l'analisi del tempo di fallimento. 
 In Python, si possono generare numeri casuali da una distribuzione di Weibull usando stats.weibull_min.rvs.
 '''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import weibull_min
