@@ -12,3 +12,7 @@ scale = 5000  # Parametro η
 
 # Generazione di 100 numeri casuali (tempi di vita) dalla distribuzione di Weibull
 lifetimes = weibull_min.rvs(shape, scale=scale, size=100)
+
+# Creazione del grafico della distribuzione di Weibull
+x = np.linspace(0, 15000, 1000)
+weibull_pdf = weibull_min.pdf(x, shape, scale=scale)
