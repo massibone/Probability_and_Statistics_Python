@@ -16,3 +16,7 @@ lifetimes = weibull_min.rvs(shape, scale=scale, size=100)
 # Creazione del grafico della distribuzione di Weibull
 x = np.linspace(0, 15000, 1000)
 weibull_pdf = weibull_min.pdf(x, shape, scale=scale)
+
+plt.figure(figsize=(10, 6))
+plt.plot(x, weibull_pdf, label=f'Weibull Distribution\nshape (β)={shape}, scale (η)={scale}')
+plt.hist(lifetimes, bins=30, density=True, alpha=0.6, color='g', label='Sample Data')
