@@ -6,5 +6,8 @@ I trial farmaceutici, ad esempio, possono avere diverse opportunità per fermare
 I design sperimentali tradizionali rispondono a domande statiche sull'efficacia dei trattamenti specificati, 
 ma i data scientist sono più interessati a sapere quale, tra molteplici opzioni, è la migliore.
 
-Per questo motivo, viene utilizzato un nuovo tipo di design sperimentale: l'algoritmo multi-armed bandit. Inoltre, esperimenti aziendali spesso non richiedono permessi come quelli medici. Tuttavia, Facebook ha suscitato critiche nel 2014 per aver condotto un esperimento sulla tonalità emotiva dei feed senza il consenso degli utenti.
+Per questo motivo, viene utilizzato un nuovo tipo di design 
+sperimentale: l'algoritmo multi-armed bandit. 
+Inoltre, esperimenti aziendali spesso non richiedono 
+permessi come quelli medici. Tuttavia, Facebook ha suscitato critiche nel 2014 per aver condotto un esperimento sulla tonalità emotiva dei feed senza il consenso degli utenti.
 '''
