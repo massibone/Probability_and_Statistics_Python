@@ -9,7 +9,8 @@ ma i data scientist sono più interessati a sapere quale, tra molteplici opzioni
 Per questo motivo, viene utilizzato un nuovo tipo di design 
 sperimentale: l'algoritmo multi-armed bandit. 
 Inoltre, esperimenti aziendali spesso non richiedono 
-permessi come quelli medici. Tuttavia, Facebook ha suscitato critiche nel 2014 per aver condotto un esperimento sulla tonalità emotiva dei feed senza il consenso degli utenti.
+permessi come quelli medici. Tuttavia, Facebook ha suscitato critiche nel 2014 
+per aver condotto un esperimento sulla tonalità emotiva dei feed senza il consenso degli utenti.
 '''
 import numpy as np
 
