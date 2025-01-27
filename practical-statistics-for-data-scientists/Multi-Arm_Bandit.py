@@ -14,4 +14,10 @@ per aver condotto un esperimento sulla tonalità emotiva dei feed senza il conse
 '''
 import numpy as np
 
+class MultiArmBandit:
+    def __init__(self, arms, epsilon=0.1):
+        self.arms = arms
+        self.epsilon = epsilon
+        self.counts = np.zeros(arms)  # Numero di volte che ogni braccio è stato tirato
+        self.values = np.zeros(arms)  # Valore medio di ricompensa per ogni braccio
 
