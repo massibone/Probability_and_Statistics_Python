@@ -27,3 +27,9 @@ class MultiArmBandit:
             return np.argmax(self.values)  # Scegli il braccio con il valore medio più alto
         else:
             return np.random.randint(self.arms)  # Scegli un braccio a caso
+def update(self, chosen_arm, reward):
+        self.counts[chosen_arm] += 1
+        n = self.counts[chosen_arm]
+        value = self.values[chosen_arm]
+        self.values[chosen_arm] = ((n - 1) / n) * value + (1 / n) * reward
+    
