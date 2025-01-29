@@ -35,3 +35,8 @@ class MultiArmBandit:
     # Numero di bracci (tipi di caramelle)
 arms = 5
 bandit = MultiArmBandit(arms)
+
+# Simulazione dell'esperimento
+num_trials = 1000
+rewards = np.random.rand(arms)  # Ricompense vere per ogni braccio
+total_reward = 0
