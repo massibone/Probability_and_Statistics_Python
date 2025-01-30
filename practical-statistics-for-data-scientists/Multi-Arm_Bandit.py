@@ -40,3 +40,8 @@ bandit = MultiArmBandit(arms)
 num_trials = 1000
 rewards = np.random.rand(arms)  # Ricompense vere per ogni braccio
 total_reward = 0
+for _ in range(num_trials):
+    chosen_arm = bandit.select_arm()
+    reward = rewards[chosen_arm]
+    bandit.update(chosen_arm, reward)
+    total_reward += reward
