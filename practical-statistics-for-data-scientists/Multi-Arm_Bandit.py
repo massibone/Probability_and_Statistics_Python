@@ -45,3 +45,5 @@ for _ in range(num_trials):
     reward = rewards[chosen_arm]
     bandit.update(chosen_arm, reward)
     total_reward += reward
+    
+    print(f"Total reward: {total_reward}")
