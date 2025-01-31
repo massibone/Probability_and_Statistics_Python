@@ -13,7 +13,8 @@ Per questo motivo, viene utilizzato un nuovo tipo di design
 sperimentale: l'algoritmo multi-armed bandit. 
 Inoltre, esperimenti aziendali spesso non richiedono 
 permessi come quelli medici. Tuttavia, Facebook ha suscitato critiche nel 2014 
-per aver condotto un esperimento sulla tonalità emotiva dei feed senza il consenso degli utenti.
+per aver condotto un esperimento sulla tonalità 
+emotiva dei feed senza il consenso degli utenti.
 '''
 import numpy as np
 
