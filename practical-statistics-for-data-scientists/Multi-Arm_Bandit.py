@@ -52,3 +52,5 @@ for _ in range(num_trials):
     
     print(f"Total reward: {total_reward}")
 print(f"Arm values: {bandit.values}")
+print(f"Arm values: {bandit.values}")
+print(f"Arm counts: {bandit.counts}")
