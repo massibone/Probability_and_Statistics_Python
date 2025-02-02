@@ -50,7 +50,7 @@ for _ in range(num_trials):
     bandit.update(chosen_arm, reward)
     total_reward += reward
     
-    print(f"Total reward: {total_reward}")
+print(f"Total reward: {total_reward}")
 print(f"Arm values: {bandit.values}")
 
 print(f"Arm counts: {bandit.counts}")
