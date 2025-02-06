@@ -10,3 +10,5 @@ Il test unidirezionale è spesso più adatto per le decisioni A/B,
 ma molti statistici preferiscono il test bidirezionale per evitare discussioni. 
 Il software di analisi, come R e scipy in Python, fornisce spesso un test bidirezionale di default.
 '''
+import numpy as np
+from scipy import stats
