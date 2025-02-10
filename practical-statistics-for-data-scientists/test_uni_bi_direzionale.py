@@ -17,3 +17,8 @@ from scipy import stats
 np.random.seed(42)  # Per riproducibilità
 group_A = np.random.normal(100, 10, 30)
 group_B = np.random.normal(105, 10, 30)
+# Test bidirezionale (two-tail)
+t_statistic, p_value_two_tail = stats.ttest_ind(group_A, group_B)
+print("Test bidirezionale:")
+print(f"Statistiche t: {t_statistic}")
+print(f"Valore p (bidirezionale): {p_value_two_tail}")
