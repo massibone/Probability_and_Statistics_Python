@@ -12,3 +12,7 @@ Il software di analisi, come R e scipy in Python, fornisce spesso un test bidire
 '''
 import numpy as np
 from scipy import stats
+# Dati campione per due gruppi (A e B)
+np.random.seed(42)  # Per riproducibilità
+group_A = np.random.normal(100, 10, 30)
+group_B = np.random.normal(105, 10, 30)
