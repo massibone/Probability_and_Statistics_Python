@@ -23,3 +23,9 @@ t_statistic, p_value_two_tail = stats.ttest_ind(group_A, group_B)
 print("Test bidirezionale:")
 print(f"Statistiche t: {t_statistic}")
 print(f"Valore p (bidirezionale): {p_value_two_tail}")
+# Test unidirezionale (one-tail)
+# Moltiplichiamo il valore p bidirezionale per 0.5
+p_value_one_tail = p_value_two_tail / 2 if t_statistic > 0 else 1 - p_value_two_tail / 2
+print("\nTest unidirezionale:")
+print(f"Statistiche t: {t_statistic}")
+print(f"Valore p (unidirezionale): {p_value_one_tail}")
