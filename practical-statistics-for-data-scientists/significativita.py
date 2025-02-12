@@ -8,3 +8,10 @@ import numpy as np
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
+
+
+# Dati dell'esperimento di e-commerce
+conversion_A = 200
+no_conversion_A = 23539
+conversion_B = 182
+no_conversion_B = 22406
