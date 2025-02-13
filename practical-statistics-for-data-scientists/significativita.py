@@ -15,3 +15,6 @@ conversion_A = 200
 no_conversion_A = 23539
 conversion_B = 182
 no_conversion_B = 22406
+# Calcolare la differenza osservata in percentuale di conversione
+obs_pct_diff = 100 * (conversion_A / (conversion_A + no_conversion_A) - conversion_B / (conversion_B + no_conversion_B))
+print(f'Observed difference: {obs_pct_diff:.4f}%')
