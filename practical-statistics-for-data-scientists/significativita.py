@@ -24,3 +24,9 @@ print(f'Observed difference: {obs_pct_diff:.4f}%')
 conversion = [0] * (no_conversion_A + no_conversion_B)
 conversion.extend([1] * (conversion_A + conversion_B))
 conversion = pd.Series(conversion)
+# Funzione di permutazione
+def perm_fun(x, nA, nB):
+    n = nA + nB
+    idx_B = set(random.sample(range(n), nB))
+    idx_A = set(range(n)) - idx_B
+    return x.iloc[list(idx_B)].mean() - x.iloc[list(idx_A)].mean()
