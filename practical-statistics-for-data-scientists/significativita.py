@@ -34,5 +34,6 @@ def perm_fun(x, nA, nB):
 # Numero di campionamenti
 nA = conversion_A + no_conversion_A
 nB = conversion_B + no_conversion_B
+
 # Calcolare le differenze di conversione permutate
 perm_diffs = [100 * perm_fun(conversion, nA, nB) for _ in range(1000)]
