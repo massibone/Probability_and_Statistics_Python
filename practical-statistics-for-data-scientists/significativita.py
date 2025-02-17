@@ -37,3 +37,17 @@ nB = conversion_B + no_conversion_B
 
 # Calcolare le differenze di conversione permutate
 perm_diffs = [100 * perm_fun(conversion, nA, nB) for _ in range(1000)]
+
+
+# Grafico della distribuzione delle differenze permutate
+fig, ax = plt.subplots(figsize=(5, 5))
+ax.hist(perm_diffs, bins=11, rwidth=0.9)
+ax.axvline(x=obs_pct_diff, color='black', lw=2)
+ax.text(obs_pct_diff + 0.02, max(np.histogram(perm_diffs, bins=11)[0]) / 2, 'Differenza\nosservata', bbox={'facecolor':'white'})
+ax.set_xlabel('Percentuale di conversione')
+ax.set_ylabel('Frequenza')
+plt.show()
+
+# Percentuale delle differenze permutate maggiori della differenza osservata
+p_value = np.mean([diff >= obs_pct_diff for diff in perm_diffs])
+print(f"P-value: {p_value:.3f}")
