@@ -26,3 +26,15 @@ def run_fishers_exact(table, verbose=True):
     if isinstance(table, pd.DataFrame):
         table = table.values
     
+
+    # Esegui il test
+    odds_ratio, p_value = stats.fisher_exact(table)
+    
+    if verbose:
+        print("\nTabella di contingenza:")
+        print(pd.DataFrame(table, 
+                         columns=['Gruppo B -', 'Gruppo B +'],
+                         index=['Gruppo A -', 'Gruppo A +']))
+        print(f"\nOdds Ratio: {odds_ratio:.4f}")
+        print(f"P-value: {p_value:.4f}")
+        
