@@ -16,3 +16,13 @@ def run_fishers_exact(table, verbose=True):
     Returns:
     --------
     
+
+    odds_ratio : float
+        Rapporto delle probabilità
+    p_value : float
+        p-value del test
+    """
+    # Converti in array numpy se necessario
+    if isinstance(table, pd.DataFrame):
+        table = table.values
+    
