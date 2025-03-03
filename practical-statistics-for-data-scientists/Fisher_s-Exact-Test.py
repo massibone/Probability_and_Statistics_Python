@@ -37,4 +37,11 @@ def run_fishers_exact(table, verbose=True):
                          index=['Gruppo A -', 'Gruppo A +']))
         print(f"\nOdds Ratio: {odds_ratio:.4f}")
         print(f"P-value: {p_value:.4f}")
-        
+  
+        # Interpreta il risultato
+        alpha = 0.05
+        print(f"\nInterpretazione (α = {alpha}):")
+        if p_value < alpha:
+            print("Rifiutiamo l'ipotesi nulla - c'è un'associazione significativa")
+        else:
+            print("Non possiamo rifiutare l'ipotesi nulla - non c'è evidenza di associazione")      
