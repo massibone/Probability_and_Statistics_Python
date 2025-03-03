@@ -44,4 +44,16 @@ def run_fishers_exact(table, verbose=True):
         if p_value < alpha:
             print("Rifiutiamo l'ipotesi nulla - c'è un'associazione significativa")
         else:
-            print("Non possiamo rifiutare l'ipotesi nulla - non c'è evidenza di associazione")      
+            print("Non possiamo rifiutare l'ipotesi nulla - non c'è evidenza di associazione")  
+        
+    
+    return odds_ratio, p_value
+
+# Esempio di utilizzo
+if __name__ == "__main__":
+    # Esempio: Studio clinico con due gruppi di trattamento
+    # Righe: Trattamento A (+ / -)
+    # Colonne: Trattamento B (+ / -)
+    example_table = np.array([[10, 2],   # 10 negativi-negativi, 2 negativi-positivi
+                             [1, 12]])    # 1 positivo-negativo, 12 positivi-positivi
+    
