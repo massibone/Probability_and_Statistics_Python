@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
     # Esegui il test
     odds_ratio, p_value = run_fishers_exact(example_table)
-    
+   
 
     # Esempio con DataFrame
     df_table = pd.DataFrame(example_table,
