@@ -60,4 +60,11 @@ if __name__ == "__main__":
     # Esegui il test
     odds_ratio, p_value = run_fishers_exact(example_table)
     
+
+    # Esempio con DataFrame
+    df_table = pd.DataFrame(example_table,
+                          columns=['Gruppo B -', 'Gruppo B +'],
+                          index=['Gruppo A -', 'Gruppo A +'])
     
+    # Esegui il test con DataFrame
+    odds_ratio, p_value = run_fishers_exact(df_table)
