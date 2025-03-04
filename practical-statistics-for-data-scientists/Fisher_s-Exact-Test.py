@@ -56,4 +56,8 @@ if __name__ == "__main__":
     # Colonne: Trattamento B (+ / -)
     example_table = np.array([[10, 2],   # 10 negativi-negativi, 2 negativi-positivi
                              [1, 12]])    # 1 positivo-negativo, 12 positivi-positivi
+
+    # Esegui il test
+    odds_ratio, p_value = run_fishers_exact(example_table)
+    
     
