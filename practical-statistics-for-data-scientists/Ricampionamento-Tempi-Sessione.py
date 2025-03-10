@@ -26,6 +26,7 @@ def permutation_test(x, nA, nB):
     idx_B = set(random.sample(range(n), nB))
     idx_A = set(range(n)) - idx_B
     return x.loc[list(idx_B)].mean() - x.loc[list(idx_A)].mean()
+
 def run_permutation_analysis(data, n_permutations=1000):
     """Esegue l'analisi completa di permutazione"""
     # Calcola le differenze reali
