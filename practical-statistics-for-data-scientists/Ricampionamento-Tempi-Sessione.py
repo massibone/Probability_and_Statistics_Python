@@ -38,3 +38,17 @@ def run_permutation_analysis(data, n_permutations=1000):
     nA = data[data.Page == 'Page A'].shape[0]
     nB = data[data.Page == 'Page B'].shape[0]
         
+
+    random.seed(1)
+    perm_diffs = [permutation_test(data.Time, nA, nB) 
+                  for _ in range(n_permutations)]
+    
+    # Visualizza risultati
+    fig, ax = plt.subplots(figsize=(5, 5))
+    ax.hist(perm_diffs, bins=11, rwidth=0.9)
+    ax.axvline(x=observed_diff, color='black', lw=2)
+    ax.text(50, 190, 'Observed\ndifference', bbox={'facecolor':'white'})
+    ax.set_xlabel('Session time differences (in seconds)')
+    ax.set_ylabel('Frequency')
+    plt.tight_layout()
+    plt.show()
