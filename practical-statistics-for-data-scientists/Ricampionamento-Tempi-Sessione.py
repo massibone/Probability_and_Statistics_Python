@@ -33,4 +33,8 @@ def run_permutation_analysis(data, n_permutations=1000):
     mean_a = data[data.Page == 'Page A'].Time.mean()
     mean_b = data[data.Page == 'Page B'].Time.mean()
     observed_diff = mean_b - mean_a
-    
+
+    # Esegui test di permutazione
+    nA = data[data.Page == 'Page A'].shape[0]
+    nB = data[data.Page == 'Page B'].shape[0]
+        
