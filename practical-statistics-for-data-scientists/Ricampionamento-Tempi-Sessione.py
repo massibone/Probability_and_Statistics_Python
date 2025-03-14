@@ -58,3 +58,15 @@ def run_permutation_analysis(data, n_permutations=1000):
     p_value = np.mean(np.array(perm_diffs) > observed_diff)
     return observed_diff, p_value
 
+if __name__ == "__main__":
+    # Esempio di utilizzo
+    data_path = Path('web_page_data.csv')  # Modifica con il tuo percorso
+    session_data = load_session_data(data_path)
+    
+    # Visualizza distribuzione
+    plot_boxplot(session_data)
+    
+    # Esegui analisi
+    diff, p_val = run_permutation_analysis(session_data)
+    print(f"Differenza osservata: {diff:.2f} secondi")
+    print(f"P-value: {p_val:.4f}")
