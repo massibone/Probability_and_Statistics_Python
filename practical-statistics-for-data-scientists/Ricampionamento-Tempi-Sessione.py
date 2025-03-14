@@ -43,7 +43,7 @@ def run_permutation_analysis(data, n_permutations=1000):
     perm_diffs = [permutation_test(data.Time, nA, nB) 
                   for _ in range(n_permutations)]
     
-    # Visualizza risultati
+# Visualizza risultati
     fig, ax = plt.subplots(figsize=(5, 5))
     ax.hist(perm_diffs, bins=11, rwidth=0.9)
     ax.axvline(x=observed_diff, color='black', lw=2)
@@ -52,3 +52,9 @@ def run_permutation_analysis(data, n_permutations=1000):
     ax.set_ylabel('Frequency')
     plt.tight_layout()
     plt.show()
+    
+    
+    # Calcola p-value
+    p_value = np.mean(np.array(perm_diffs) > observed_diff)
+    return observed_diff, p_value
+
