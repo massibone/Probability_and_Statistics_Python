@@ -61,3 +61,24 @@ def run_anova(data):
     f_stat, p_val = stats.f_oneway(*groups)
     
     return aov_table, f_stat, p_val
+
+
+if __name__ == "__main__":
+    # Esempio di utilizzo
+    data_path = 'four_sessions.csv'  # Modifica con il tuo percorso
+    session_data = load_multiple_sessions(data_path)
+    
+    # Visualizza dati
+    plot_multiple_sessions(session_data)
+    
+    # Test di permutazione
+    var, p_val = permutation_variance_test(session_data)
+    print(f"Varianza osservata: {var:.2f}")
+    print(f"P-value (permutazione): {p_val:.4f}")
+    
+    # ANOVA formale
+    anova_table, f_stat, p_val = run_anova(session_data)
+    print("\nTabella ANOVA:")
+    print(anova_table)
+    print(f"\nF-statistic: {f_stat/2:.4f}")
+    print(f"P-value (ANOVA): {p_val/2:.4f}")
