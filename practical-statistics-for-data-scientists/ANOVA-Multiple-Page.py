@@ -30,3 +30,22 @@ def permutation_variance_test(df, n_permutations=3000):
         df['Time'] = np.random.permutation(df['Time'].values)
         return df.groupby('Page').mean().var()[0]
     
+
+
+    # Esegui permutazioni
+    random.seed(1)
+    perm_variance = [perm_test(df) for _ in range(n_permutations)]
+    
+    # Visualizza distribuzione
+    fig, ax = plt.subplots(figsize=(5, 5))
+    ax.hist(perm_variance, bins=11, rwidth=0.9)
+    ax.axvline(x=observed_variance, color='black', lw=2)
+    ax.text(60, 200, 'Observed\nvariance', bbox={'facecolor':'white'})
+    ax.set_xlabel('Variance')
+    ax.set_ylabel('Frequency')
+    plt.tight_layout()
+    plt.show()
+    
+    # Calcola p-value
+    p_value = np.mean([var > observed_variance for var in perm_variance])
+    return observed_variance, p_value
