@@ -49,3 +49,15 @@ def permutation_variance_test(df, n_permutations=3000):
     # Calcola p-value
     p_value = np.mean([var > observed_variance for var in perm_variance])
     return observed_variance, p_value
+
+def run_anova(data):
+    """Esegue ANOVA formale"""
+    # Usando statsmodels
+    model = smf.ols('Time ~ Page', data=data).fit()
+    aov_table = sm.stats.anova_lm(model)
+    
+    # Usando scipy
+    groups = [data[data.Page == page].Time for page in data.Page.unique()]
+    f_stat, p_val = stats.f_oneway(*groups)
+    
+    return aov_table, f_stat, p_val
