@@ -59,7 +59,8 @@ def plot_chi_square_distribution():
         'chi_10': stats.chi2.pdf(x, df=10),
         'chi_20': stats.chi2.pdf(x, df=20),
     })
-    
+
+
     fig, ax = plt.subplots(figsize=(4, 2.5))
     ax.plot(chi.x, chi.chi_1, color='black', linestyle='-', label='1')
     ax.plot(chi.x, chi.chi_2, color='black', linestyle=(0, (1, 1)), label='2')
