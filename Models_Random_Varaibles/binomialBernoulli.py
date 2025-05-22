@@ -15,6 +15,7 @@ pmf1 = binom.pmf(x, n, p1)
 pmf2 = binom.pmf(x, n, p2)
 pmf3 = binom.pmf(x, n, p3)
 
+
 # Creazione del grafico
 plt.plot(x, pmf1, 'bo-', label='Variabile Aleatoria 1')
 plt.plot(x, pmf2, 'go-', label='Variabile Aleatoria 2')
