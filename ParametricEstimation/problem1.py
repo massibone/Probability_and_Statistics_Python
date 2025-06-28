@@ -10,7 +10,6 @@ Dove t è il valore critico corrispondente al livello di confidenza desiderato, 
 Per un intervallo di confidenza bilaterale al 99%, il livello di confidenza è del 99% / 2 = 0.995. Utilizzando una tabella o una funzione di distribuzione t, troviamo che il valore critico corrispondente a un livello di confidenza di 0.995 con 19 gradi di libertà (20 - 1) è di circa 2.861.
 '''
 
-
 import math
 
 sample_mean = 1.2  # Valore medio del campione
