@@ -1,5 +1,6 @@
 Models of random variables are mathematical representations or frameworks that describe the behavior and characteristics of random variables. They provide a way to understand and analyze the probabilistic properties of random phenomena.
 
+
 Let's consider an example to illustrate this concept. Suppose we have a random variable X that represents the outcome of rolling a fair six-sided die. The possible values of X are 1, 2, 3, 4, 5, and 6, each with a probability of 1/6.
 
 To create a model for this random variable, we can use a discrete probability distribution. In this case, the model would be a uniform distribution, where each outcome has an equal probability.
