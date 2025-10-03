@@ -27,3 +27,16 @@ for feature in housing.feature_names:
 # Select a subset of features for clarity
 selected_features = ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms']
 X_selected = X[selected_features]
+
+# Display the first few rows of the data
+print("\nFirst 5 rows of selected features:")
+print(X_selected.head())
+print("\nFirst 5 target values (median house value in $100,000):")
+print(y[:5])
+
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(
+    X_selected, y, test_size=0.2, random_state=42
+)
+print(f"\nTraining set size: {X_train.shape[0]}")
+print(f"Testing set size: {X_test.shape[0]}")
