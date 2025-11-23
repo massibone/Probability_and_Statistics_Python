@@ -3,7 +3,8 @@ utilizzare la distribuzione di Pareto
 con Python per descrivere la 
 distribuzione dei redditi, 
 dove la maggior parte delle persone 
-ha redditi bassi, ma un piccolo numero di individui ha redditi estremamente elevati. 
+ha redditi bassi, ma un piccolo numero 
+di individui ha redditi estremamente elevati. 
 In un contesto specifico, si potrebbe osservare che ad esempio il 20% della popolazione possiede l'80% della ricchezza totale, un modello che riflette il principio di Pareto.
 '''
 
