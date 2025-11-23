@@ -10,7 +10,8 @@ In un contesto specifico,
 si potrebbe osservare che 
 ad esempio il 20% della popolazione 
 possiede l'80% della ricchezza totale, 
-un modello che riflette il principio di Pareto.
+un modello che riflette il principio 
+di Pareto.
 '''
 
 import numpy as np
