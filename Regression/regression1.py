@@ -1,5 +1,5 @@
 '''
- dati seguenti x percentuale di acqua contenuta e Y densità del prodotto
+Dati seguenti x percentuale di acqua contenuta e Y densità del prodotto
 x 5 6 7 10 12 15 18 29
 Y 7.4 9.3 10.6 15.4 18.1 22.2 24.1 24.8
 a)traccia il diagramma di dispersione
@@ -37,3 +37,4 @@ plt.grid(True)
 plt.show()
 
 print(f"La retta di regressione è: y = {m:.2f}x + {b:.2f}")
+
