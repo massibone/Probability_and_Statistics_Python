@@ -26,3 +26,4 @@ plt.title('Dual Distribution Transformation')
 plt.xlabel('Average Mortality (millions)')
 plt.legend()
 plt.show()
+
