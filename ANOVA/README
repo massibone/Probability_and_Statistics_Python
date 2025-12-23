@@ -2,6 +2,7 @@ Analysis of Variance (ANOVA) is a statistical technique used to compare the mean
 It allows us to understand if the variations observed in the data are due to random chance or if they can be attributed to specific factors or treatments.
 In simpler terms, ANOVA helps researchers or analysts answer questions like:
 
+
 Are there significant differences between the average scores of different groups?
 Do different treatments or conditions have a significant impact on the outcome variable?
 Are there any interactions between multiple independent variables?
