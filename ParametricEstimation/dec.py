@@ -21,3 +21,4 @@ plt.title('Distribuzione Esponenziale (Tempi di Attesa)')
 plt.legend()
 
 plt.show()
+
