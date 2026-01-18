@@ -10,6 +10,7 @@ p3 = 0.7  # Probabilità di successo per la variabile aleatoria 3
 # Generazione dei valori possibili per la variabile aleatoria
 x = np.arange(0, n+1)
 
+
 # Calcolo delle funzioni di massa di probabilità per le variabili aleatorie
 pmf1 = binom.pmf(x, n, p1)
 pmf2 = binom.pmf(x, n, p2)
