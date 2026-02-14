@@ -1,4 +1,4 @@
-import pandas as pd
+seimport pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import random
@@ -30,7 +30,6 @@ def permutation_variance_test(df, n_permutations=3000):
         df['Time'] = np.random.permutation(df['Time'].values)
         return df.groupby('Page').mean().var()[0]
     
-
 
     # Esegui permutazioni
     random.seed(1)
