@@ -40,3 +40,14 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 print(f"\nTraining set size: {X_train.shape[0]}")
 print(f"Testing set size: {X_test.shape[0]}")
+# Fit the multiple linear regression model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Print model parameters
+print("\nMultiple Linear Regression Results:")
+print(f"Intercept (b₀): {model.intercept_:.4f}")
+print("Coefficients:")
+for feature, coef in zip(selected_features, model.coef_):
+    print(f"  {feature}: {coef:.4f}")
+
