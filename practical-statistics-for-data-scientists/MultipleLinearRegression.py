@@ -51,3 +51,15 @@ print("Coefficients:")
 for feature, coef in zip(selected_features, model.coef_):
     print(f"  {feature}: {coef:.4f}")
 
+
+# Formulate the regression equation
+equation = f"y = {model.intercept_:.4f}"
+for feature, coef in zip(selected_features, model.coef_):
+    if coef >= 0:
+        equation += f" + {coef:.4f} × {feature}"
+    else:
+        equation += f" - {abs(coef):.4f} × {feature}"
+print(f"\nRegression Equation:\n{equation}")
+
+# Make predictions on test data
+y_pred_test = model.predict(X_test)
