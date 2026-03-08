@@ -3,7 +3,6 @@ I gradi di libertà di una variabile aleatoria o di una statistica in genere esp
 
 '''
 
-
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import t
@@ -27,4 +26,5 @@ plt.grid(True)
 
 # Visualizzazione del grafico
 plt.show()
+
 
