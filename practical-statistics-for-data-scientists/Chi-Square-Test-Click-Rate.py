@@ -28,7 +28,7 @@ def permutation_chi_square(clicks, n_permutations=2000):
     # Calcola chi-quadrato osservato
     chi2observed = chi_square(clicks.values, expected)
     
-    # Funzione per singola permutazione
+    # Singola permutazione
     def perm_fun(box):
         random.shuffle(box)
         sample_clicks = [sum(box[0:1000]),
@@ -72,7 +72,7 @@ def plot_chi_square_distribution():
     plt.show()
 
 if __name__ == "__main__":
-    # Esempio di utilizzo
+    # Esempio 
     data_path = 'click_rates.csv'  # Modifica con il tuo percorso
     click_data = load_click_data(data_path)
     
