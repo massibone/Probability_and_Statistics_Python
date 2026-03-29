@@ -52,4 +52,5 @@ else:
     print("Non ci sono evidenze sufficienti per concludere che i due laghi abbiano concentrazioni di PCB significativamente diverse.")
 
 #I due laghi hanno 
-concentrazioni di PCB significativamente diverse.
+concentrazioni di PCB significativamente 
+diverse.
