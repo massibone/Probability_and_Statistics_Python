@@ -44,10 +44,12 @@ livello_significatività = 0.05
 # Calcolo del valore critico t per il livello di significatività
 valore_critico_t = t.ppf(1 - livello_significatività / 2, gradi_libertà)
 
+
 # Confronto con il valore critico per determinare la significatività
 if np.abs(t_stat) > valore_critico_t:
     print("I due laghi hanno concentrazioni di PCB significativamente diverse.")
 else:
     print("Non ci sono evidenze sufficienti per concludere che i due laghi abbiano concentrazioni di PCB significativamente diverse.")
 
-#I due laghi hanno concentrazioni di PCB significativamente diverse.
+#I due laghi hanno 
+concentrazioni di PCB significativamente diverse.
