@@ -16,6 +16,7 @@ sample_mean = np.mean(data)  # Calcolo del valore medio del campione
 sample_std_dev = np.std(data, ddof=1)  # Calcolo della deviazione standard campionaria
 sample_size = len(data)  # Dimensione del campione
 
+
 confidence_level_a = 0.95  # Livello di confidenza bilaterale
 confidence_level_b = 0.80  # Livello di confidenza unilaterale sinistro
 confidence_level_c = 0.80  # Livello di confidenza unilaterale destro
