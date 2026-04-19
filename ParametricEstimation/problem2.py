@@ -41,6 +41,7 @@ print(f"Intervallo di confidenza unilaterale destro al {confidence_level_c * 100
 
 '''
 RISULTATI
-Intervallo di confidenza bilaterale al 95.0%: [128.1435316088795, 138.30091283556496]
+Intervallo di confidenza bilaterale al 95.0%: 
+[128.1435316088795, 138.30091283556496]
 Intervallo di confidenza unilaterale sinistro al 80.0%: [135.30028396777524, inf]Intervallo di confidenza unilaterale destro al 80.0%: [-inf, 131.1441604766692]  
 '''
