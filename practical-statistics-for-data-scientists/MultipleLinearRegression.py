@@ -63,3 +63,45 @@ print(f"\nRegression Equation:\n{equation}")
 
 # Make predictions on test data
 y_pred_test = model.predict(X_test)
+# Calculate performance metrics
+r2_train = model.score(X_train, y_train)
+r2_test = r2_score(y_test, y_pred_test)
+rmse_test = np.sqrt(mean_squared_error(y_test, y_pred_test))
+
+print("\nModel Performance:")
+print(f"R² Score (Training): {r2_train:.4f}")
+print(f"R² Score (Testing): {r2_test:.4f}")
+print(f"RMSE (Testing): {rmse_test:.4f}")
+
+# Plot actual vs predicted values
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred_test, alpha=0.7)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--')
+plt.xlabel('Actual Values', fontsize=12)
+plt.ylabel('Predicted Values', fontsize=12)
+plt.title('Actual vs Predicted House Values', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+
+# Plot residuals
+residuals = y_test - y_pred_test
+plt.figure(figsize=(10, 6))
+plt.scatter(y_pred_test, residuals, alpha=0.7)
+plt.axhline(y=0, color='r', linestyle='--')
+plt.xlabel('Predicted Values', fontsize=12)
+plt.ylabel('Residuals', fontsize=12)
+plt.title('Residual Plot', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+
+# Feature importance visualization
+plt.figure(figsize=(10, 6))
+plt.bar(selected_features, model.coef_)
+plt.xlabel('Features', fontsize=12)
+plt.ylabel('Coefficient Value', fontsize=12)
+plt.title('Feature Importance', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
