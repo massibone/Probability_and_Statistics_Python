@@ -20,3 +20,4 @@ stats.probplot(z_scores, dist="norm", plot=ax)
 ax.get_lines()[1].set_color('grey')  # Cambia il colore della linea di riferimento
 plt.title("QQ-Plot di un campione di 100 valori normalizzati")
 plt.show()
+
