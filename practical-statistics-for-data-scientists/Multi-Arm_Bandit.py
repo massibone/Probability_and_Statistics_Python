@@ -25,7 +25,6 @@ class MultiArmBandit:
         self.counts = np.zeros(arms)  # Numero di volte che ogni braccio è stato tirato
         self.values = np.zeros(arms)  # Valore medio di ricompensa per ogni braccio
 
-
     def select_arm(self):
         if np.random.rand() > self.epsilon:
             return np.argmax(self.values)  # Scegli il braccio con il valore medio più alto
