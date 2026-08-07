@@ -58,6 +58,7 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
+
 # Visualize residuals
 residuals = y - y_pred
 plt.figure(figsize=(10, 6))
