@@ -75,7 +75,7 @@ if __name__ == "__main__":
     print(f"Varianza osservata: {var:.2f}")
     print(f"P-value (permutazione): {p_val:.4f}")
     
-    # ANOVA formale
+    # ANOVA formale 
     anova_table, f_stat, p_val = run_anova(session_data)
     print("\nTabella ANOVA:")
     print(anova_table)
