@@ -52,7 +52,7 @@ def run_permutation_analysis(data, n_permutations=1000):
     ax.set_ylabel('Frequency')
     plt.tight_layout()
     plt.show()
-    
+
     
     # Calcola p-value
     p_value = np.mean(np.array(perm_diffs) > observed_diff)
