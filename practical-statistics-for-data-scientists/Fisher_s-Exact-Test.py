@@ -15,7 +15,7 @@ def run_fishers_exact(table, verbose=True):
         
     Returns:
     --------
-    
+
 
     odds_ratio : float
         Rapporto delle probabilità
